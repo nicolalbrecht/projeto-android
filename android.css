@@ -8,7 +8,7 @@
 }
 @font-face {
 		font-family: 'Bebas Neue';
-		src: url('/home/alvaro/Área de Trabalho/Desafios/Desafio10/fontes/BebasNeue-Regular.otf') format('opentype');
+		src: url('fontes/BebasNeue-Regular.otf') format('opentype');
 		font-weight: bolder;
 		font-style: normal;
 }
