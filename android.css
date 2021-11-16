@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@font-face {
+		font-family: 'droid';
+		src: url('fontes/idroid.otf') format('opentype');
+		font-weight: lighter;
+		font-style: normal;
+}
+@font-face {
+		font-family: 'Bebas Neue';
+		src: url('/home/alvaro/Área de Trabalho/Desafios/Desafio10/fontes/BebasNeue-Regular.otf') format('opentype');
+		font-weight: bolder;
+		font-style: normal;
+}
+:root {
+	--cor0: #C5EBD6; 
+	--cor1: #83E1AD;
+	--cor2: #3DDC84;
+	--cor3: #2FA866;
+	--cor4: #1A5C37;
+	--cor5: #063D13;
+
+	--fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+	--fontedestaque: 'Bebas Neue', cursive;
+	--fonteandroid: 'droid', cursive;
+}
+.cabecalho {
+	margin: 0px;
+	padding-top: 30px;
+	width: auto;
+	min-height: 150px;
+	background-image: linear-gradient(to bottom, var(--cor3) 5%, var(--cor5) 87%);
+}
+* {
+	margin: 0px; 
+	padding: 0px;
+}
+body {
+	background-color:  var(--cor0);
+}
+.cabecalho > h1 {
+	text-align: center;
+	padding-top: 20px;
+	font-family: var(--fontedestaque);
+	color: white;	
+	font-weight: normal;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+.cabecalho > p {
+	text-align: center;
+	max-width: 600px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: var(--fontepadrao);
+	color: white;
+	font-weight: lighter;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+	font-size: 1.2em;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.cabecalho > nav {
+	padding: 10px;
+	box-shadow: 0px 7px 7px rgba(0,0,0,0.3)
+}
+.cabecalho > nav > a {
+	text-decoration: none;	
+	color: var(--cor1);
+	font-family: sans-serif;
+	text-shadow: 1px 2px 2px black;	
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	transition-duration: 0.5s;
+}
+nav > a:hover {
+	background-color: var(--cor3);
+	color: var(--cor5);
+}
+main {
+	min-width: 300px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 10px black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: white;
+}
+main > article > .topo {
+	font-family: var(--fonteandroid);	
+	color: var(--cor5);
+	font-weight: normal;
+	font-size: 1.8em;
+}
+main > article > .subtitulo {
+	font-family: var(--fonteandroid);	
+	color: var(--cor4);
+	background-image: linear-gradient(90deg,var(--cor1) 10%, transparent);
+	font-size: 1.3em;
+	text-indent: 10px;
+	font-weight: normal;
+}
+main > article > p {
+	font-family: var(--fontepadrao);
+}
+main p {
+	margin: 15px 0px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 2em;
+	font-size: 1.1em;
+}
+main strong {
+	color: var(--cor4);
+	font-weight: bold;
+}
+main a {
+	background-color: var(--cor1);
+	padding: 2px 8px;
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--cor5)
+}
+main a:hover {
+	text-decoration: underline;
+	color: var(--cor3)
+}
+.imagem {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+}
+.imagem02 {
+	max-width: 350px;
+	margin: auto;
+	display: block;
+}
+a.externo::after {
+	content: '\00A0\1F517';
+}
+div.video {
+	margin: 0px -20px 30px -20px;
+	background-color: var(--cor5);
+	padding: 20px;
+	padding-bottom: 59%;
+	position: relative;
+}
+div.video > iframe {
+	position: absolute;
+	top: 6.5%;	
+	left: 5%;
+	width: 90%;
+	height: 86.5%;
+}
+aside {
+	background-color: var(--cor1);
+	border-radius: 10px 10px 10px 10px;
+	/*Faça um "C" invertido com o dedo para não esquecer*/
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.281);
+	font-family: sans-serif;
+	padding: 10px;
+}
+aside > h3 {
+	color: white;
+	font-weight: bolder;
+	background-color: var(--cor4);
+	padding: 5px;
+	margin: -10px -10px 0px -10px;
+	border-radius: 10px 10px 0px 0px;
+	text-indent: 6px;
+	padding: 10px;
+}
+aside > div > ul {
+	list-style-type: '\2714\00A0\00A0';	
+	list-style-position: inside;
+	columns: 2;
+}
+footer {
+	text-align: center;
+	background-color: #053D1B;
+	padding: 5px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 0.8em;
+}
+footer a {
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: var(--cor1);
+}
